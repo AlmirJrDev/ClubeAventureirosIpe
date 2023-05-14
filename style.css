@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a{
+    transition: all 0.2s ease
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  background-color: #2062af;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+}
+.logo{
+  display: flex;
+  justify-center: center;
+  
+}
+
+.imglogo{
+  width: 100px;
+  cover: object-fit;
+  margin-left: 5rem
+}
+
+
+.home {
+  margin-top: 10px;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-left: 30px;
+  color: white;
+}
+
+.fotos {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.lema {
+  padding-left: 120px;
+  color: white;
+}
+
+body {
+  background-color: #0a284b;
+  overflow-x: hidden;
+}
+
+h3 {
+  padding-left: 155px;
+  padding-top: 50px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fazerpedido {
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+}
+
+.feijoada {
+  margin-top: 100px;
+  margin-left: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  height: 45px;
+  padding-left: 30px;
+  font-size: larger;
+}
+
+.fundofeijoada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1225px;
+  height: 600px;
+  background-color: #f5c30f;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.divtext {
+  margin-bottom: 2rem;
+}
+
+.textfeijoada {
+  font-size: 30px;
+}
+
+.ingfeijoada {
+  margin-bottom: 2rem;
+}
+
+.link1 {
+  background: #000;
+  width: 120px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.encomendar {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link1:hover {
+  background-color: #303030;
+  width: 130px;
+  height: 40px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.feijoadaft {
+  width: 400px;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.foto-frf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.farofaft {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.feijoadaft:hover {
+  transform: rotate(-10deg);
+}
+
+.farofaft:hover {
+    transform: rotate(-10deg);
+  }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.txtprodutos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+
+  font-size: 30px;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  center-align: center;
+
+  background-color: #800100;
+  width: 100%;
+  margin: 0 auto;
+  height: 150px;
+}
+
+.txtcontatos {
+}
+
+.slogan {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.fundotxt {
+  font-size: 18px;
+}
+
+.fundop {
+  font-weight: bold;
+  padding-left: 5rem;
+}
+
+.contato {
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.fundopcontato {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .imglogo{
+    margin-top: 2rem;
+    margin-left: auto;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .lema {
+    text-align: center;
+    color: white;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .fotos {
+    width: 100vw;
+  }
+
+  .lema {
+  }
+
+  .title {
+  }
+
+  .feijoada {
+    margin-top: 50px;
+    margin-left: 0;
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+  }
+
+  .fundofeijoada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1225px;
+    height: 600px;
+    background-color: #f5c30f;
+  }
+
+  .feijoadaft {
+    width: 200px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 2rem;
+  }
+
+  .textfeijoada {
+    font-size: 20px;
+  }
+
+  .divtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ingfeijoada{
+    text-align: center;
+  }
+
+  .info {
+    margin: 0 auto;
+  }
+
+  .farofaft {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 2rem;
+  }
+
+  .txtprodutos {
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    center-align: center;
+    flex-direction: column;
+    height: 250px;
+  }
+
+  .slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  .fundotxt{
+    margin: 0 auto;
+  }
+
+  .fundop {
+    padding-left: 0rem;
+    margin: 0 auto;
+  }
+
+  .contato {
+    margin: 0 auto;
+  }
+}
