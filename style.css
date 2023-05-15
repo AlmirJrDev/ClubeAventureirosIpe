@@ -299,7 +299,7 @@ footer {
     width: 200px;
     border-radius: 20px;
     transition: 0.5s ease-in-out;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .textfeijoada {
@@ -359,5 +359,9 @@ footer {
 
   .contato {
     margin: 0 auto;
+  }
+
+  .txtprodutos {
+    text-align: center;
   }
 }
