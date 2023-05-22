@@ -2,103 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="./assents/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="./assents/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 
-    <title>Promoção do Clube Aventureiros Ipê</title>
+  <title>Promoção do Clube Aventureiros Ipê</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-          <img class="imglogo" src="./assents/logo.svg" alt="">
-          <h1>Clube de Aventureiros Ipê</h1>
+  <header>
+    <div class="logo">
+      <img class="imglogo" src="./assents/logo.svg" alt="">
+      <h1>Clube de Aventureiros Ipê</h1>
+    </div>
+    <nav class="home">
+
+      <a href="#produtos">Produtos</a>
+      <a href="https://contate.me/sabordaurora">Fazer pedido</a></button>
+      <a href="#contato">Contato</a>
+
+    </nav>
+
+
+  </header>
+
+  <main>
+    <section>
+
+      <img class="fotos" src="./assents/pexels-dayvison-de-oliveira-silva-5695872.jpg" alt="feijoada">
+
+    </section>
+
+
+
+
+
+    <section>
+      <div class="title">
+        <h5 class="txtprodutos">Promoção do Clube Aventureiros Ipê</h5> <a name="produtos"></a>
+      </div>
+
+      <div class="fundofeijoada">
+        <div>
+          <img class="feijoadaft" src="./assents/feijoada.jpeg" alt="">
         </div>
-        <nav class="home">
+        <div class="info">
+          <div class="divtext">
+            <h4 class="textfeijoada">1L Feijoada Vegetariana + Farofa</h4>
+          </div>
+          <div>
+            <p class="ingfeijoada"> 🌳 Aproveite a Promoção Especial do Clube Aventureiros Ipê <br> e faça a diferença
+              na vida de uma criança! <br><br> Ao adquirir essa promoção incrível, você estará colaborando <br> para que
+              uma criança tenha a oportunidade de vivenciar a <br> emocionante experiência no Aventuri. <br> A retirada
+              da promoção está marcada para o dia <strong>11/06, às 11 horas.</strong> <br>
 
-            <a href="#produtos">Produtos</a>
-            <a href="https://contate.me/sabordaurora">Fazer pedido</a></button>
-            <a href="#contato">Contato</a>
+              <br> <strong>Quadra de Esportes IASD </strong>
+              <br> <strong>Rua Abid Aburad, 955</strong>
+              <br>
+              <br>
 
-        </nav>
-
-
-    </header>
-
-    <main>
-        <section>
-
-            <img class="fotos" src="./assents/pexels-dayvison-de-oliveira-silva-5695872.jpg" alt="feijoada">
-
-        </section>
-
-
-
+              <strong>Valor: R$30.00</strong>
+            </p>
+          </div>
 
 
-        <section>
-            <div class="title">
-                <h5 class="txtprodutos">Promoção do Clube Aventureiros Ipê</h5> <a name="produtos"></a>
+          <div class="link1">
+            <a class="encomendar" href="#" onclick="openDialog()">➪Encomendar</a>
+          </div>
+
+          <div class="dialog-form" id="dialog">
+            <div class="dialog-content">
+              <h3>Escolha sua quantidade</h3>
+              <div class="input-row">
+              <div class="input-dialog">
+                <input type="radio" name="opcao" value="opcao1" onchange="exibirImagem(this.value)"> <label
+                  for="opcao">1</label>
+        <p id="texto-copiar" style="display: none;">00020126400014br.gov.bcb.pix0111711357589720203Pix520400005303986540530.005802BR5925ALMERINDA MARQUES DE ARAU6008Brasilia62290525Ho5tTbGw0YuqSTLJTbaVA4uMO63048BDA</p>
+              </div>
+             
             </div>
 
-            <div class="fundofeijoada">
-                <div>
-                    <img class="feijoadaft" src="./assents/feijoada.jpeg" alt="">
-                </div>
-                <div class="info">
-                    <div class="divtext">
-                        <h4 class="textfeijoada">1L Feijoada Vegetariana + Farofa</h4>
-                    </div>
-                    <div>
-                        <p class="ingfeijoada"> 🌳 Aproveite a Promoção Especial do Clube Aventureiros Ipê <br> e faça a diferença na vida de uma criança! <br><br> Ao adquirir essa promoção incrível, você estará colaborando <br> para que uma criança tenha  a oportunidade de vivenciar a <br> emocionante experiência no Aventuri. <br> A retirada da promoção está marcada para o dia <strong>11/06, às 11 horas.</strong> <br>
+              <button id="buttonclose" onclick="closeDialog()">Fechar</button>
 
-                            <br>  <strong>Quadra de Esportes IASD </strong>
-                            <br> <strong>Rua Abid Aburad, 955</strong>
-                            <br>
-                            <br>
-                        
-                            <strong>Valor: R$30.00</strong>
-                        </p>
-                    </div>
+              <div id="imagem">
+                <img src="./assents/logo.jpeg" alt="">
+              </div>
+              <button id="botao-copiar" onclick="copiarTexto()" style="display: none;">Copiar</button>
+              <p id="mensagem-copiado" style="display: none;">Texto copiado!</p>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </main>
 
 
-                    <div class="link1"><a class="encomendar" href="https://contate.me/sabordaurora">➪Encomendar</a></div>
-                </div>
-        </section>
-      
-    </main>
+  <div class="title">
+    <h5 class="txtprodutos"> Contato</h5> <a name="contato"></a>
+  </div>
 
+  <footer>
 
-    <div class="title">
-        <h5 class="txtprodutos"> Contato</h5> <a name="contato"></a>
+    <div class="slogan">
+      <a name="contato"></a>
+      <h4 class="fundotxt">Clube de Aventureiros Ipê</h4>
+      <p class="fundop">Realize o primeiro sonho - <strong>Aventuri 2023</strong></p>
     </div>
 
-    <footer>
+    <div class="contato">
+      <p class="fundopcontato">Retirada dia 11/06
+        <br>Paranavai-PR
+        <br>Rua Abid Aburad, 955
+        <br>Quadra de Esportes IASD
+        <br>Tel: (44) 9 9997-8177
 
-        <div class="slogan">
-            <a name="contato"></a>
-            <h4 class="fundotxt">Clube de Aventureiros Ipê</h4>
-            <p class="fundop">Realize o primeiro sonho - <strong>Aventuri 2023</strong></p>
-        </div>
-
-        <div class="contato">
-            <p class="fundopcontato">Retirada dia 11/06
-                <br>Paranavai-PR
-                <br>Rua Abid Aburad, 955
-                <br>Quadra de Esportes IASD
-                <br>Tel: (44) 9 9997-8177
-           
-            </p>
-        </div>
+      </p>
+    </div>
 
 
-    </footer>
+  </footer>
+  <script>
+    function openDialog() {
+      var dialog = document.getElementById("dialog");
+      dialog.style.display = "block";
+    }
+
+    function closeDialog() {
+      var dialog = document.getElementById("dialog");
+      dialog.style.display = "none";
+    }
+
+    function exibirImagem(opcaoSelecionada) {
+      var imagemDiv = document.getElementById("imagem");
+      var imagemURL = "./assents/logo.jpeg"; // URL da imagem correspondente à opção selecionada
+      var botaoCopiar = document.getElementById("botao-copiar");
+      var textoCopiavel = document.getElementById("texto-copiar");
+
+      // Defina a URL da imagem com base na opção selecionada
+      if (opcaoSelecionada === "opcao1") {
+        imagemURL = "./assents/qrcode.jpeg";
+        textoCopiavel.textContent = "00020126400014br.gov.bcb.pix0111711357589720203Pix520400005303986540530.005802BR5925ALMERINDA MARQUES DE ARAU6008Brasilia62290525Ho5tTbGw0YuqSTLJTbaVA4uMO63048BDA";
+        botaoCopiar.style.display = "block";
+      } else if (opcaoSelecionada === "opcao2") {
+        imagemURL = "./assents/qrcode.jpeg";
+        textoCopiavel.textContent = "Texto copiável para Opção 2";
+        botaoCopiar.style.display = "block";
+      } else if (opcaoSelecionada === "opcao3") {
+        imagemURL = "./assents/qrcode.jpeg";
+        textoCopiavel.textContent = "Texto copiável para Opção 3";
+        botaoCopiar.style.display = "block";
+      } else {
+        imagemDiv.innerHTML = "./assents/logo.jpeg"; // Limpa a imagem
+        botaoCopiar.style.display = "none"; // Oculta o botão Copiar
+        textoCopiavel.textContent = ""; // Limpa o texto copiável
+      }
+
+      // Exibe a imagem
+      imagemDiv.innerHTML = `<img src="${imagemURL}" alt="Imagem Escolhida">`;
+    }
+
+    function copiarTexto() {
+      var textoCopiavel = document.getElementById("texto-copiar");
+      var mensagemCopiado = document.getElementById("mensagem-copiado");
+
+      // Cria um elemento de área de transferência temporário
+      var tempInput = document.createElement("textarea");
+      tempInput.value = textoCopiavel.textContent;
+      document.body.appendChild(tempInput);
+
+      // Copia o conteúdo para a área de transferência
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+
+      // Exibe a mensagem de texto copiado
+      mensagemCopiado.style.display = "block";
+
+      // Oculta a mensagem após 3 segundos
+      setTimeout(function () {
+        mensagemCopiado.style.display = "none";
+      }, 3000);
+    }
+  </script>
 </body>
 
 </html>
