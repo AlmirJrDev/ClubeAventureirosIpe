@@ -24,6 +24,7 @@
 .input-row{
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -169,7 +170,7 @@ body {
 
 #imagem img{
 
-  width: 100%;
+  width: 90%;
 }
 
 .title {
