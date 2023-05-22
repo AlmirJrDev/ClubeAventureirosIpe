@@ -51,7 +51,7 @@
   position: relative;
   width: 400px;
   max-width: 90%;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 4px;
@@ -63,6 +63,15 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+#text-info{
+  text-align: center;
+}
+
+#text-info a{
+ color: #993399;
+
 }
 
 #buttonclose{
