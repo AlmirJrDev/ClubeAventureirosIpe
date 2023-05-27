@@ -349,6 +349,14 @@ footer {
     gap: 0.5rem;
     margin-bottom: 2rem;
   }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  
 
   .lema {
     text-align: center;
@@ -356,7 +364,9 @@ footer {
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    display: none;
+   
   }
 
   .fotos {
