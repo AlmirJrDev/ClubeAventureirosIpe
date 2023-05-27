@@ -38,10 +38,7 @@
 
 
 }
-.dialog-content button {
 
-
-}
 
 .dialog-content {
   
@@ -72,6 +69,7 @@
 
 #text-info a{
  color: #993399;
+ text-decoration-color: red;  
 
 }
 
@@ -102,9 +100,6 @@
   background-color: #007;
 }
 
-a{
-    transition: all 0.2s ease
-}
 
 header {
   width: 100vw;
@@ -119,13 +114,13 @@ header {
 }
 .logo{
   display: flex;
-  justify-center: center;
+  justify-content: center;
   
 }
 
 .imglogo{
   width: 100px;
-  cover: object-fit;
+  object-fit: cover;
   margin-left: 5rem
 }
 
@@ -282,10 +277,7 @@ body {
 .farofaft:hover {
     transform: rotate(-10deg);
   }
-a {
-  text-decoration: none;
-  color: #fff;
-}
+
 
 .txtprodutos {
   display: flex;
@@ -300,17 +292,16 @@ a {
 footer {
   display: flex;
   justify-content: space-between;
-  center-align: center;
+  align-items: center;
 
   background-color: #800100;
   color: #fff;
   width: 100%;
-  margin: 0 auto;
+ 
   height: 150px;
 }
 
-.txtcontatos {
-}
+
 
 .slogan {
   margin-left: 2rem;
@@ -327,8 +318,8 @@ footer {
 }
 
 .contato {
-  margin-right: 2rem;
-  margin-top: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
 }
 
 .fundopcontato {
@@ -372,11 +363,6 @@ footer {
     width: 100vw;
   }
 
-  .lema {
-  }
-
-  .title {
-  }
 
   .feijoada {
     margin-top: 50px;
@@ -433,13 +419,12 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .txtprodutos {
-  }
+
 
   footer {
     display: flex;
     justify-content: center;
-    center-align: center;
+    align-items: center;
     flex-direction: column;
     height: 250px;
   }
