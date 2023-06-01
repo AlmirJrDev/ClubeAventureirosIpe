@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="shortcut icon" href="./assents/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 
@@ -17,14 +17,14 @@
 <body>
   <header>
     <div class="logo">
-      <img class="imglogo" src="./assents/logo.svg" alt="">
+      <img class="imglogo" src="./assets/Meu projeto.png" alt="">
       <h1>Clube de Aventureiros Ipê</h1>
     </div>
     <nav class="home">
 
-      <a href="#produtos">Produtos</a>
-      <a class="encomendar" href="#" onclick="openDialog()">Fazer pedido</a>
-      <a href="#contato">Contato</a>
+      <a href="#produtos" class="fazerpedido">Produtos</a>
+      <a class="fazerpedido" href="#" onclick="openDialog()">Fazer pedido</a>
+      <a href="#contato" class="fazerpedido">Contato</a>
 
     </nav>
 
@@ -34,7 +34,7 @@
   <main>
     <section>
 
-      <img class="fotos" src="./assents/pexels-dayvison-de-oliveira-silva-5695872.jpg" alt="feijoada">
+      <img class="fotos" src="./assets/pexels-dayvison-de-oliveira-silva-5695872.jpg" alt="feijoada">
 
     </section>
 
@@ -49,7 +49,7 @@
 
       <div class="fundofeijoada">
         <div>
-          <img class="feijoadaft" src="./assents/feijoada.jpeg" alt="">
+          <img class="feijoadaft" src="./assets/feijoada.jpeg" alt="">
         </div>
         <div class="info">
           <div class="divtext">
@@ -91,7 +91,7 @@
               <button id="buttonclose" onclick="closeDialog()">Fechar</button>
 
               <div id="imagem">
-                <img src="./assents/logo.jpeg" alt="">
+                <img src="./assets/logo.jpeg" alt="">
               </div>
               <button id="botao-copiar" onclick="copiarTexto()" style="display: none;">Copiar</button>
               <p id="mensagem-copiado" style="display: none;">Texto copiado!</p>
@@ -128,69 +128,7 @@
 
 
   </footer>
-  <script>
-    function openDialog() {
-      var dialog = document.getElementById("dialog");
-      dialog.style.display = "block";
-    }
-
-    function closeDialog() {
-      var dialog = document.getElementById("dialog");
-      dialog.style.display = "none";
-    }
-
-    function exibirImagem(opcaoSelecionada) {
-      var imagemDiv = document.getElementById("imagem");
-      var imagemURL = "./assents/logo.jpeg"; // URL da imagem correspondente à opção selecionada
-      var botaoCopiar = document.getElementById("botao-copiar");
-      var textoCopiavel = document.getElementById("texto-copiar");
-
-      // Defina a URL da imagem com base na opção selecionada
-      if (opcaoSelecionada === "opcao1") {
-        imagemURL = "./assents/qrcode.jpeg";
-        textoCopiavel.textContent = "00020126400014br.gov.bcb.pix0111711357589720203Pix520400005303986540530.005802BR5925ALMERINDA MARQUES DE ARAU6008Brasilia62290525Ho5tTbGw0YuqSTLJTbaVA4uMO63048BDA";
-        botaoCopiar.style.display = "block";
-      } else if (opcaoSelecionada === "opcao2") {
-        imagemURL = "./assents/qrcode.jpeg";
-        textoCopiavel.textContent = "Texto copiável para Opção 2";
-        botaoCopiar.style.display = "block";
-      } else if (opcaoSelecionada === "opcao3") {
-        imagemURL = "./assents/qrcode.jpeg";
-        textoCopiavel.textContent = "Texto copiável para Opção 3";
-        botaoCopiar.style.display = "block";
-      } else {
-        imagemDiv.innerHTML = "./assents/logo.jpeg"; // Limpa a imagem
-        botaoCopiar.style.display = "none"; // Oculta o botão Copiar
-        textoCopiavel.textContent = ""; // Limpa o texto copiável
-      }
-
-      // Exibe a imagem
-      imagemDiv.innerHTML = `<img src="${imagemURL}" alt="Imagem Escolhida">`;
-    }
-
-    function copiarTexto() {
-      var textoCopiavel = document.getElementById("texto-copiar");
-      var mensagemCopiado = document.getElementById("mensagem-copiado");
-
-      // Cria um elemento de área de transferência temporário
-      var tempInput = document.createElement("textarea");
-      tempInput.value = textoCopiavel.textContent;
-      document.body.appendChild(tempInput);
-
-      // Copia o conteúdo para a área de transferência
-      tempInput.select();
-      document.execCommand("copy");
-      document.body.removeChild(tempInput);
-
-      // Exibe a mensagem de texto copiado
-      mensagemCopiado.style.display = "block";
-
-      // Oculta a mensagem após 3 segundos
-      setTimeout(function () {
-        mensagemCopiado.style.display = "none";
-      }, 3000);
-    }
-  </script>
+ <script src="script.js"></script>
 </body>
 
 </html>
